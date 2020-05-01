@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kg-game/static/css/main.2fe966d0.chunk.css",
+    "main.js": "/kg-game/static/js/main.fc1ff0d0.chunk.js",
+    "main.js.map": "/kg-game/static/js/main.fc1ff0d0.chunk.js.map",
+    "runtime-main.js": "/kg-game/static/js/runtime-main.b1caa8f3.js",
+    "runtime-main.js.map": "/kg-game/static/js/runtime-main.b1caa8f3.js.map",
+    "static/js/2.434287eb.chunk.js": "/kg-game/static/js/2.434287eb.chunk.js",
+    "static/js/2.434287eb.chunk.js.map": "/kg-game/static/js/2.434287eb.chunk.js.map",
+    "index.html": "/kg-game/index.html",
+    "precache-manifest.5c75663e5bee0e66f41759e490809bab.js": "/kg-game/precache-manifest.5c75663e5bee0e66f41759e490809bab.js",
+    "service-worker.js": "/kg-game/service-worker.js",
+    "static/css/main.2fe966d0.chunk.css.map": "/kg-game/static/css/main.2fe966d0.chunk.css.map",
+    "static/js/2.434287eb.chunk.js.LICENSE.txt": "/kg-game/static/js/2.434287eb.chunk.js.LICENSE.txt",
+    "static/media/score.svg": "/kg-game/static/media/score.97512cce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1caa8f3.js",
+    "static/js/2.434287eb.chunk.js",
+    "static/css/main.2fe966d0.chunk.css",
+    "static/js/main.fc1ff0d0.chunk.js"
+  ]
+}
