@@ -42,7 +42,6 @@ const Rules = () => {
                         <h1>Rules</h1>
                         <b>Every question will have a timer of 10 seconds.</b><hr />
                         <b>Each gameplay consists of 10 questions.</b><hr />
-                        <b>Level decides the diffulty of questions.</b>
                     </Paper>
 
                     <Paper className={classes.social} style={{ color: 'black' }}>
