@@ -1,6 +1,0 @@
-{ 
- ...
-"test": "CI=true react-scripts test --env=jsdom",
-"test:coverage": "npm test -- --coverage",
-...
-}

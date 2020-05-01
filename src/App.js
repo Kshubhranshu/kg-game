@@ -32,7 +32,7 @@ const App = () => {
     * 2: gameplay
     * 3: score card
   */
-  const [mode, setMode] = useState(1);
+  const [mode, setMode] = useState(0);
 
   const signup = () => {
 
@@ -43,7 +43,7 @@ const App = () => {
       .then(result => {
         var user = result.user;
 
-        firebase.database().ref(`users/`).set({
+        firebase.database().ref('users/' + user.uid).set({
           email: user.email,
           name: user.displayName,
         });
