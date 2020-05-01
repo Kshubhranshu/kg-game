@@ -1,3 +1,12 @@
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,144 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div > .login-button {
+  display: flex;
+  width: 15%;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+div > .logout-button {
+  margin: 10px 1px;
+  display: inline;
+  min-width: 15%;
+  left: 30%;
+}
+
+div > .login-info {
+  margin: 10px 1px;
+  min-width: 25%;
+  display: inline;
+  left: 30%;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+div .level-btn-active {
+  margin: 0 2px;
+  min-width: 20%;
+  filter: blur(1px);
+  color: white;
+}
+
+div .level-btn-e:hover {
+  background-color: green;
+}
+
+div .level-btn-m:hover {
+  background-color: orange;
+}
+
+div .level-btn-h:hover {
+  background-color: red;
+}
+
+div .level-btn-e {
+  background-color: green;
+  margin: 0 2px;
+  min-width: 20%;
+  color: white;
+}
+
+div .level-btn-m {
+  background-color: orange;
+  margin: 0 2px;
+  min-width: 20%;
+  color: white;
+}
+
+div .level-btn-h {
+  background-color: red;
+  margin: 0 2px;
+  min-width: 20%;
+  color: white;
+}
+
+div .answer-btn {
+  margin-top: 10%;
+  min-width: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: red;
+  font-size: large;
+  color: white;
+}
+
+div .answer-btn-active {
+  margin-top: 10%;
+  min-width: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #6c3;
+  font-size: large;
+  color: white;
+}
+
+div .answer-btn:hover {
+  background-color: red;
+}
+
+div .answer-btn-active:hover {
+  background-color: red;
+}
+
+div .timer {
+  font-size: 40px;
 }

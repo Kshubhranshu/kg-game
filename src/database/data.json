@@ -1,0 +1,82 @@
+[
+  {
+    "question": "what is color of sky?",
+    "option1": "green",
+    "option2": "pink",
+    "option3": "brown",
+    "option4": "blue",
+    "answer": "blue"
+  },
+  {
+    "question": "2 x 2 = ",
+    "option1": "2",
+    "option2": "4",
+    "option3": "22",
+    "option4": "6",
+    "answer": "4"
+  },
+  {
+    "question": "how many days are there in a week?",
+    "option1": "7",
+    "option2": "6",
+    "option3": "5",
+    "option4": "8",
+    "answer": "7"
+  },
+  {
+    "question": "how many months are in a year?",
+    "option1": "13",
+    "option2": "14",
+    "option3": "12",
+    "option4": "15",
+    "answer": "12"
+  },
+  {
+    "question": "3 x 9 =",
+    "option1": "27",
+    "option2": "24",
+    "option3": "23",
+    "option4": "26",
+    "answer": "27"
+  },
+  {
+    "question": "what comes before 67",
+    "option1": "68",
+    "option2": "66",
+    "option3": "69",
+    "option4": "65",
+    "answer": "66"
+  },
+  {
+    "question": "how many finger do you have?",
+    "option1": "10",
+    "option2": "11",
+    "option3": "12",
+    "option4": "09",
+    "answer": "10"
+  },
+  {
+    "question": "how many sense organs do you have?",
+    "option1": "5",
+    "option2": "6",
+    "option3": "4",
+    "option4": "3",
+    "answer": "5"
+  },
+  {
+    "question": "how much is 23 - 01",
+    "option1": "24",
+    "option2": "22",
+    "option3": "21",
+    "option4": "25",
+    "answer": "22"
+  },
+  {
+    "question": "how much is 6 + 5",
+    "option1": "10",
+    "option2": "11",
+    "option3": "09",
+    "option4": "12",
+    "answer": "11"
+  }
+]

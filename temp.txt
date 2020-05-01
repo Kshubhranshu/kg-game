@@ -1,0 +1,13 @@
+<div className={classes.insidePaper}>
+    <h1>Select Level 💪🏻</h1>
+    <Button className="level-btn-e" variant="contained" color="primary" value="easy">
+        Easy
+    </Button>
+    <Button className="level-btn-m" variant="contained" color="primary" value="medium">
+        Medium
+        </Button>
+    <Button className="level-btn-h" variant="contained" color="primary" value="hard">
+        Hard
+    </Button>
+</div>
+className = { activeEasy? "level-btn-e-active": "level-btn-e" }
