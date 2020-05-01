@@ -25,7 +25,6 @@ const App = () => {
   const [errorStatus, setErrorStatus] = useState(null);
   const [score, setScore] = useState(0);
   const [played, setPlayed] = useState(false);
-  const [userId, setUserId] = useState('');
 
   /* states
     * 0: idle state
@@ -33,7 +32,7 @@ const App = () => {
     * 2: gameplay
     * 3: score card
   */
-  const [mode, setMode] = useState(0);
+  const [mode, setMode] = useState(1);
 
   const signup = () => {
 
@@ -74,6 +73,8 @@ const App = () => {
     setMode(0);
     setUserName('');
     setScore(0);
+    setPlayed(false);
+    setScore(0);
     setTimeout(() => {
       setErrorStatus(null);
     }, 2000);
@@ -97,13 +98,13 @@ const App = () => {
 
   function writeNewPost() {
     let user = firebase.auth().currentUser;
-    firebase.database().ref(`user-dash/`).set({
+    firebase.database().ref(`user-dash/` + user.uid).push({
       email: user.email,
       name: user.displayName,
       score: score,
       played: played
     });
-    firebase.database().ref(`leaderboard/`).set({
+    firebase.database().ref(`leaderboard/` + user.uid).push({
       name: user.displayName,
       score: score,
       played: played
@@ -111,7 +112,7 @@ const App = () => {
   }
 
   const dashboard = () => {
-    
+    setMode(1);
   }
 
   return (
@@ -121,7 +122,7 @@ const App = () => {
       <div class="bg bg3"></div>
       <Navbar loginStatus={loginStatus} userName={userName} signup={signup} logout={logout} />
       <Alert errorStatus={errorStatus} />
-      <Board mode={mode} changeMode={changeMode} changeNewMode={changeNewMode} score={score} updateScore={updateScore} />
+      <Board mode={mode} changeMode={changeMode} changeNewMode={changeNewMode} score={score} updateScore={updateScore} dashboard={dashboard} />
     </div>
   );
 }

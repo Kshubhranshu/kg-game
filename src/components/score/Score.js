@@ -3,8 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import scoreLogo from './score.svg';
+import Button from '@material-ui/core/Button';
 
-const Gamepad = ({ changeNewMode, score }) => {
+
+const Gamepad = ({ score, dashboard }) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -19,6 +21,11 @@ const Gamepad = ({ changeNewMode, score }) => {
                     </Paper>
                 </Grid>
             </Grid>
+            <div className="dash-btn-container">
+                <Button className="dash-btn" variant="contained" onClick={dashboard} >
+                    Go Back
+                </Button>
+            </div>
         </div>
     );
 }

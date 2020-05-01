@@ -185,3 +185,11 @@ div .answer-btn-active:hover {
 div .timer {
   font-size: 40px;
 }
+
+div .dash-btn {
+  margin: 5px;
+}
+
+div .dash-btn-container {
+  text-align: center;
+}

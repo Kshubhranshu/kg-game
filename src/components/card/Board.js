@@ -6,7 +6,7 @@ import GameDash from '../gamepad/GameDash';
 import Gamepad from '../gamepad/Gamepad';
 import Score from '../score/Score'
 
-const Board = ({ mode, level, changeMode, changeNewMode, score, updateScore }) => {
+const Board = ({ mode, level, changeMode, changeNewMode, score, updateScore, dashboard }) => {
     const classes = useStyles();
     var game;
 
@@ -15,7 +15,7 @@ const Board = ({ mode, level, changeMode, changeNewMode, score, updateScore }) =
             <Grid container spacing={3}>
                 <Grid item xs >
                     <Paper className={classes.paper} style={{ color: 'white', backgroundColor: 'purple' }}>About</Paper>
-                    <Paper className={classes.paper} style={{ color: 'black', backgroundColor: 'white' }}>This is a simple web app game which engages kids to learn new words.</Paper>
+                    <Paper className={classes.paper} style={{ color: 'black', backgroundColor: 'white' }}>Quiz game app for kidos.</Paper>
                 </Grid>
             </Grid>
 
@@ -74,7 +74,7 @@ const Board = ({ mode, level, changeMode, changeNewMode, score, updateScore }) =
     }
     else if (mode === 3) {
         return (
-            <Score score={score} />
+            <Score score={score} dashboard={dashboard} />
         )
     }
 }

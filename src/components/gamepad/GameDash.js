@@ -36,6 +36,15 @@ const GameDash = ({ changeMode, score }) => {
         setHardClass('level-btn-h');
     }
 
+    const validateLevel = () => {
+        if (level !== '') {
+            changeMode();
+        }
+        else {
+            alert("Please select level and then continue");
+        }
+    }
+
     return (
         <div className={classes.root}>
             <div>
@@ -45,7 +54,7 @@ const GameDash = ({ changeMode, score }) => {
                 <Grid item xs >
                     <Paper className={classes.paper} style={{ color: 'black', backgroundColor: 'white' }}>
                         <div className={classes.insidePaper}>
-                            <h1>Select Level 💪🏻</h1>
+                            <h1>Select Level <span>💪🏻</span></h1>
                             <Button id="btn-1" className={easyClass} variant="contained" onClick={() => { levelSelect("easy"); setActiveEasy(); }} value="easy" >
                                 Easy
                             </Button>
@@ -56,9 +65,9 @@ const GameDash = ({ changeMode, score }) => {
                                 Hard
                             </Button>
                         </div>
-                        <h1>Go Slow 🐢</h1>
+                        <h1>Go Slow <span>🐢</span></h1>
                         <div>
-                            <PlayButton onClick={changeMode} >Play</PlayButton>
+                            <PlayButton onClick={validateLevel} >Play</PlayButton>
                         </div>
                     </Paper>
                 </Grid >
@@ -76,7 +85,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
     },
     paper: {
-        padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
         margin: 'auto',
