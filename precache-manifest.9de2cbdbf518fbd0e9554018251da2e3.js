@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2f2ca114c09429a312a300dbb62795b",
+    "revision": "f3c6721a246bc3e2079e957d1cc1511f",
     "url": "/kg-game/index.html"
   },
   {
-    "revision": "e6b5e714eddf632d9833",
+    "revision": "a0ae4251dbb45926ea4b",
     "url": "/kg-game/static/css/main.2fe966d0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kg-game/static/js/2.c5d77399.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e6b5e714eddf632d9833",
-    "url": "/kg-game/static/js/main.c8ee4167.chunk.js"
+    "revision": "a0ae4251dbb45926ea4b",
+    "url": "/kg-game/static/js/main.62a435d0.chunk.js"
   },
   {
     "revision": "3c56f571dd0b74d3db64",
