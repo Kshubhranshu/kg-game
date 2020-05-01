@@ -59,6 +59,7 @@ const App = () => {
 
     promise
       .catch(e => {
+        console.log(e);
         setErrorStatus(({ msg: 'Login failed', type: 'error' }))
         setTimeout(() => {
           setErrorStatus(null);
