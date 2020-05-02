@@ -6,6 +6,7 @@ import Board from './components/card/Board';
 
 var firebase = require('firebase');
 
+/* firebase coniguration */
 var firebaseConfig = {
   apiKey: "AIzaSyDXpKrNDj6wjiaqFGdfx8CRBkvZAzhJnAg",
   authDomain: "game-cf8b0.firebaseapp.com",
@@ -15,11 +16,10 @@ var firebaseConfig = {
   messagingSenderId: "635154006400",
   appId: "1:635154006400:web:22d8083e7ced2e72190165"
 };
-// Initialize Firebase
+/* Initialize Firebase */
 firebase.initializeApp(firebaseConfig);
 
 const App = () => {
-
   const [loginStatus, setLoginStatus] = useState(false);
   const [userName, setUserName] = useState('');
   const [errorStatus, setErrorStatus] = useState(null);
@@ -35,7 +35,6 @@ const App = () => {
   const [mode, setMode] = useState(0);
 
   const signup = () => {
-
     var provider = new firebase.auth.GoogleAuthProvider();
     var promise = firebase.auth().signInWithPopup(provider);
 
@@ -47,6 +46,7 @@ const App = () => {
           email: user.email,
           name: user.displayName,
         });
+
         setErrorStatus(({ msg: 'Login successfull', type: 'success' }));
         setTimeout(() => {
           setErrorStatus(null);
@@ -93,25 +93,20 @@ const App = () => {
   const updateScore = (s) => {
     setScore(s);
     setPlayed(true);
-    writeNewPost();
   }
 
-  function writeNewPost() {
+  const writeScore = () => {
+    console.log(score);
+    console.log(played);
     let user = firebase.auth().currentUser;
-    firebase.database().ref(`user-dash/` + user.uid).push({
-      email: user.email,
-      name: user.displayName,
-      score: score,
-      played: played
-    });
-    firebase.database().ref(`leaderboard/` + user.uid).push({
-      name: user.displayName,
+    firebase.database().ref('users/' + user.uid).update({
       score: score,
       played: played
     });
   }
 
   const dashboard = () => {
+    writeScore();
     setMode(1);
   }
 

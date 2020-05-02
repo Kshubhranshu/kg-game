@@ -179,7 +179,7 @@ div .answer-btn:hover {
 }
 
 div .answer-btn-active:hover {
-  background-color: red;
+  background-color: green;
 }
 
 div .timer {

@@ -47,6 +47,7 @@ const Gamepad = ({ changeNewMode, updateScore }) => {
         setAnswerBtn4("answer-btn-active");
     }
 
+    //
     useEffect(() => {
         if (index < 10) {
             const interval = setInterval(() => {
@@ -55,24 +56,34 @@ const Gamepad = ({ changeNewMode, updateScore }) => {
                 setAnswerBtn2("answer-btn");
                 setAnswerBtn3("answer-btn");
                 setAnswerBtn4("answer-btn");
-            }, 10000);
+            }, 4000);
             const timer = setInterval(() => {
                 setTimer(timer => (timer - 1));
             }, 1000);
-            return /* clear interval*/;
+            return () => {
+                if (interval) clearInterval(interval);
+                if (timer) clearInterval(timer);
+            }
         }
     }, [data]);
-    if (timer === 0) {
-        setTimer(10)
-    };
-    if (index === 9) {
-        updateScore(s);
-        changeNewMode();
-    }
+
+    useEffect(() => {
+        if (timer === 0) {
+            setTimer(10);
+        }
+    }, [timer]);
+
+    useEffect(() => {
+        if (index === 9) {
+            updateScore(s);
+            changeNewMode();
+        }
+    }, [index, updateScore, changeNewMode, s]);
 
     const checkAnswer = (ans) => {
         if (dataItem.answer === ans) setS(s => (s + 1));
     }
+    //
 
     return (
         <div className={classes.root}>
