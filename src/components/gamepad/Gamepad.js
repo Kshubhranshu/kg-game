@@ -56,7 +56,7 @@ const Gamepad = ({ changeNewMode, updateScore }) => {
                 setAnswerBtn2("answer-btn");
                 setAnswerBtn3("answer-btn");
                 setAnswerBtn4("answer-btn");
-            }, 4000);
+            }, 10000);
             const timer = setInterval(() => {
                 setTimer(timer => (timer - 1));
             }, 1000);
