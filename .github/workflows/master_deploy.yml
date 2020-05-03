@@ -17,8 +17,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: npm install
-      - name: npm test:ci
-         run: npm run test:ci
+      - name: npm test:CI
+         run: npm run test:CI
          env:
             CI: ""
       - name: Deploy to GH Pages
