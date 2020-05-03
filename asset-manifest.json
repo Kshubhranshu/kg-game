@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/kg-game/static/css/main.8b1662e5.chunk.css",
-    "main.js": "/kg-game/static/js/main.b33e5c6b.chunk.js",
-    "main.js.map": "/kg-game/static/js/main.b33e5c6b.chunk.js.map",
+    "main.js": "/kg-game/static/js/main.5ee086b2.chunk.js",
+    "main.js.map": "/kg-game/static/js/main.5ee086b2.chunk.js.map",
     "runtime-main.js": "/kg-game/static/js/runtime-main.b1caa8f3.js",
     "runtime-main.js.map": "/kg-game/static/js/runtime-main.b1caa8f3.js.map",
-    "static/js/2.d2119145.chunk.js": "/kg-game/static/js/2.d2119145.chunk.js",
-    "static/js/2.d2119145.chunk.js.map": "/kg-game/static/js/2.d2119145.chunk.js.map",
+    "static/js/2.2e6917bb.chunk.js": "/kg-game/static/js/2.2e6917bb.chunk.js",
+    "static/js/2.2e6917bb.chunk.js.map": "/kg-game/static/js/2.2e6917bb.chunk.js.map",
     "index.html": "/kg-game/index.html",
-    "precache-manifest.16803a11b46a85892432f8fb259db6c5.js": "/kg-game/precache-manifest.16803a11b46a85892432f8fb259db6c5.js",
+    "precache-manifest.8448bf043b01c99ffa190b4c3e5fb11f.js": "/kg-game/precache-manifest.8448bf043b01c99ffa190b4c3e5fb11f.js",
     "service-worker.js": "/kg-game/service-worker.js",
     "static/css/main.8b1662e5.chunk.css.map": "/kg-game/static/css/main.8b1662e5.chunk.css.map",
-    "static/js/2.d2119145.chunk.js.LICENSE.txt": "/kg-game/static/js/2.d2119145.chunk.js.LICENSE.txt",
+    "static/js/2.2e6917bb.chunk.js.LICENSE.txt": "/kg-game/static/js/2.2e6917bb.chunk.js.LICENSE.txt",
     "static/media/score.svg": "/kg-game/static/media/score.97512cce.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b1caa8f3.js",
-    "static/js/2.d2119145.chunk.js",
+    "static/js/2.2e6917bb.chunk.js",
     "static/css/main.8b1662e5.chunk.css",
-    "static/js/main.b33e5c6b.chunk.js"
+    "static/js/main.5ee086b2.chunk.js"
   ]
 }
