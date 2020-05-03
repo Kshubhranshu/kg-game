@@ -8,7 +8,6 @@ import Score from '../score/Score'
 
 const Board = ({ mode, level, changeMode, changeNewMode, score, updateScore, dashboard }) => {
     const classes = useStyles();
-    var game;
 
     if (mode === 0) return (
         <div className={classes.root}>
@@ -84,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     paper: {
-        padding: theme.spacing(2),
+        // padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
         margin: 'auto',

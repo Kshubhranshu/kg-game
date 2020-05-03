@@ -3,34 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        marginBottom: '5px',
-        color: theme.palette.text.secondary,
-        width: '70%',
-        marginLeft: '-35%',
-        padding: '10px',
-        background: 'rgba(0, 0, 0, .1)'
-    },
-    social: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        marginBottom: '5px',
-        color: theme.palette.text.secondary,
-        width: '70%',
-        marginLeft: '-35%',
-        borderRadius: '20px',
-        padding: '10px',
-        background: 'rgba(0, 0, 0, .1)'
-    }
-
-}));
-
 const Rules = () => {
     const classes = useStyles();
 
@@ -52,6 +24,34 @@ const Rules = () => {
         </div>
     );
 }
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        // padding: theme.spacing(2),
+        textAlign: 'center',
+        marginBottom: '5px',
+        color: theme.palette.text.secondary,
+        width: '70%',
+        marginLeft: '-35%',
+        padding: '10px',
+        background: 'rgba(0, 0, 0, .1)'
+    },
+    social: {
+        // padding: theme.spacing(2),
+        textAlign: 'center',
+        marginBottom: '5px',
+        color: theme.palette.text.secondary,
+        width: '70%',
+        marginLeft: '-35%',
+        borderRadius: '20px',
+        padding: '10px',
+        background: 'rgba(0, 0, 0, .1)'
+    }
+
+}));
 
 export default Rules;
 

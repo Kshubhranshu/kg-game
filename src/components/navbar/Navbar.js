@@ -1,7 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Board from '../card/Board';
 
 const Navbar = ({ loginStatus, userName, signup, logout, mode }) => {
     if (loginStatus === true) {
